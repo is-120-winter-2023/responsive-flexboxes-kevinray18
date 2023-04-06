@@ -347,7 +347,7 @@ nav {
   align-items: center;
   justify-content: center;
   inset: 0;
-  background-color: var(--space-cadet);
+  background-color: var(--color-secondary);
   margin-bottom: 2 rem;
 }
 
@@ -368,11 +368,11 @@ nav {
 }
 
 nav a:not([href]) {
-  color: var(--roman-silver);
+  color: var(--color-primary);
 }
 
 nav a[href]:hover {
-  color: var(--space-cadet-light);
+  color: var(--color-accent);
 }
 
 nav a[href]:hover::after {
@@ -448,7 +448,7 @@ nav a[href]:hover::after {
   }
 
   nav a:not([href]) {
-    color: var(--roman-silver);
+    color: var(--color-accent);
   }
 
   nav a::after {
@@ -458,14 +458,14 @@ nav a[href]:hover::after {
     height: 3px;
     margin-left: -6px;
     margin-top: 6px;
-    background-color: var(--space-cadet-light);
+    background-color: var(--color-primary);
     transform: scale(0);
     transition: transform 200ms ease-in, color 300ms ease-in;
     transform-origin: right;
   }
 
   nav a[href]:hover {
-    color: var(--space-cadet-light);
+    color: var(--color-secondary);
   }
 
   nav a[href]:hover::after {
