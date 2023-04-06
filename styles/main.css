@@ -12,6 +12,9 @@
   --color-secondary: #219ebc; /* clear sky */
   --color-accent: #fb8500; /* summer time */
   --color-accent-light: #ffb703; /* orange creamsickle */
+  --gutter: 1rem;
+  --gap: 6rem;
+  --half-gap: calc(var(--gap) / 2);
 }
 
 *,
@@ -94,7 +97,8 @@ img[src$="svg"] {
 body {
   font-family: "Antonio", sans-serif;
   color: var(--color-font);
-  font-weight: 500;
+  display: flex;
+  flex-direction: column;
   font-size: 1rem;
 }
 
@@ -185,8 +189,17 @@ a.button:hover {
 
 main {
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 var(--gutter);
   max-width: 50rem;
+}
+
+article,
+aside {
+  margin-bottom: 6rem;
+}
+
+aside {
+  padding: 0 1rem;
 }
 
 .hero picture {
