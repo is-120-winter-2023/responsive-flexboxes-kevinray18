@@ -99,7 +99,14 @@
         <p> I'm something of a sandwich expert personally. You can trust me.</p>
     </footer>
 
+    <script>
+        const header = document.querySelector("header");
 
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+            header.classList.toggle("close");
+        });
+
+    </script>
 </body>
 
 </html>
