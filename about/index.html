@@ -19,6 +19,25 @@
 </head>
 
 <body>
+
+  <div class="hero">
+    <div class="video">
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/ij1gL0k6Iz8?controls=0&start=2&autoplay=1&mute=1&modestbranding=1&playlist=ij1gL0k6Iz8&loop=1"
+            allow="autoplay; loop"></iframe>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="text-wrapper">
+      <h1><strong>About Sandwiches</strong></h1>
+    </div>
+
+  </div>
+
   <header>
     <div class="menu-icon">
       <svg viewbox="0 0 60 60">
@@ -36,10 +55,6 @@
     </nav>
   </header>
 
-  <img srcset="../images/pbj-300px.jpg 300w, 
-            ../images/pbj-600px.jpg 600w,
-            ../images/pbj-900px.jpg 900w" sizes="50vw" src="../images/pbj-600px.jpg" alt="peanut butter jelly sandwich"
-    width="600" height="800">
 
   <main>
     <h1> <em>What are the best sandwiches?</em></h1>
@@ -52,17 +67,22 @@
     <p> Ice Cream</p>
   </main>
 
+  <footer>
+    <p>Not really a sandwich guy? Get off my page.</p>
+  </footer>
 
+
+  <script>
+    const header = document.querySelector("header");
+
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      header.classList.toggle("close");
+    });
+
+  </script>
 
 </body>
 
-<script>
-  const header = document.querySelector("header");
 
-  document.querySelector(".menu-icon").addEventListener("click", () => {
-    header.classList.toggle("close");
-  });
-
-</script>
 
 </html>
